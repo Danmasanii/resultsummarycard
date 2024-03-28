@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Hanken Grotesk;
+}
+
+.cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 560px;
+    margin: 70px auto;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 4px 4px 5px 0px;
+
+
+}
+
+.container_1 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 400px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(241, 81%, 54%);
+    background-image: linear-gradient(180deg, hsl(252, 100%, 60%) 20%, hsl(241, 81%, 54%) 80%);
+    border-radius: 20px;
+}
+
+.card-title {
+    font-weight: 700;
+    margin-bottom: 55px;
+    color: hsla(241, 100%, 89%, 0.8);
+}
+
+.container_1 .card .card_circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    /* border: 1px solid grey; */
+    border-radius: 50%;
+    background-image: linear-gradient(190deg, hsl(241, 81%, 54%) 5%, hsl(252, 100%, 67%) 95%);
+
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score h1 {
+    font-size: 55px;
+}
+
+.score span {
+    color: hsla(241, 100%, 89%, 0.8);
+
+}
+
+.remark {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.great {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.remark .text span {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    color: hsl(221, 100%, 96%);
+    color: hsla(241, 100%, 89%, 0.8);
+}
+
+.container_2 .card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px;
+    width: 280px;
+    height: 400px;
+    color: hsl(0, 11%, 41%);
+    color: #000;
+    font-weight: 600;
+    border-radius: 0px 20px 20px 0px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 4px 4px 5px 0px;
+
+}
+
+.card header {
+    margin-bottom: 20px;
+}
+
+/* REACTION */
+.card .reaction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: hsla(0, 100%, 67%, 0.05);
+}
+
+.reaction h5 {
+    color: hsla(0, 100%, 67%, 0.7);
+}
+
+.wrap_2 .child_2 {
+    color: hsl(241, 100%, 80%);
+    color: hsl(241, 100%, 89%);
+    color: hsl(221, 100%, 96%);
+    color: hsla(241, 100%, 89%, 0.8);
+    color: hsla(224, 30%, 27%, 0.5);
+}
+
+.card .memory {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 7px;
+    background-color: hsl(39, 100%, 56%, 0.05);
+}
+
+.memory h5 {
+    color: hsl(39, 100%, 56%, 0.9);
+    margin-left: 5px;
+}
+
+/* VERBAL */
+.card .verbal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 7px;
+    background-color: hsl(166, 100%, 37%, 0.05);
+}
+
+
+.wrap_1 {
+    display: flex;
+    margin-left: 5px;
+}
+
+.verbal h5 {
+    margin-left: 5px;
+    color: hsl(166, 100%, 37%, 0.7);
+}
+
+/* VISUAL */
+.card .visual {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 7px;
+    background-color: hsl(234, 85%, 45%, 0.05);
+}
+
+.wrap_1 {
+    display: flex;
+    margin-left: 5px;
+}
+
+.visual h5 {
+    margin-left: 5px;
+    color: hsl(234, 85%, 45%);
+}
+
+/* VISUAL END */
+
+button {
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    padding: 15px 30px;
+    margin-top: 15px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(224, 30%, 27%);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(234, 85%, 45%);
+}
+
+@media screen and (min-width: 320px) and (max-width: 760px) {
+    
+    .cards-container {
+        flex-direction: column;
+        box-shadow: none;
+        height: 100%;
+        width: 100%;
+    }
+    .container_1 .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -10px;
+        height: 350px;
+        background-image: linear-gradient(180deg, hsl(252, 100%, 60%) 20%, hsl(241, 81%, 54%) 80%);
+        border-radius: 20px;
+    
+    }
+}

@@ -1,0 +1,13 @@
+/* MEDIA QUERY */
+@media screen and (min-width: 320px) and (max-width: 768px){
+    body{
+        background: #000;
+    }
+    .cards-container{
+        height: 100%;
+        background-color: blueviolet;
+    }
+    .container_1{
+        background-color: #fff;
+    }
+}
